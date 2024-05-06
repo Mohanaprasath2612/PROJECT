@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <style>
+      .logo{
+        height: 100px;
+        width: 100%;
+        /* background-color:white ; */
+        padding: 19px 0px 0px 575px;
+        font-weight: bold;
+        /* position: fixed; */
+      }
+      .care{
+        color:rgb(28, 131, 28) ;
+      }
+      .nav1{
+        padding:15px 0px 0px 235px !important;
+        height: 55px;
+        /* position:fixed; */
+
+
+
+      }
+      .nav-clr{
+        background-color:rgb(28, 131, 28);
+        /* position:fixed; */
+      }
+      .nav-item a:hover{
+        text-decoration: underline;
+        color: goldenrod;
+      }
+      .nav-item a{
+        color: beige;
+        padding: 0px 0px 0px 80px !important;
+        font-weight: bold;
+      }
+      
+     /* ///////// */
+      .div1{
+        height:500px;
+        width:100%;
+        /* background-color: blueviolet; */
+      }
+      .img1 img{
+        height:700px;
+        width:100%;
+        opacity: 0.5;
+      }
+      .txt1 h4{
+        position:absolute;
+        top:300px;
+        left:100px;
+        color:goldenrod;
+      }
+      .txt2 h1{
+        position:absolute;
+        top:350px;
+        left:100px;
+        color:white;
+        font-size:70px;
+      }
+      .txt3 h3{
+        position: absolute;
+        top: 540px;
+        left: 100px;
+        color: rgb(3, 0, 0);
+      }
+      .div2{
+        height: 590px;
+        width: 100%;
+        background-color: white;
+        position:absolute;
+        top: 766px;
+        display: flex;
+        /* margin-left: 100px; */
+      }
+      .box1{
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        top: 10px;
+        margin: 100px 0px 0px 70px;
+        box-shadow: 2px 6px 9px ;
+        text-align: center;
+        
+      }
+      .box2{
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        top: 10px;
+        margin: 100px 0px 0px 150px;
+        box-shadow: 2px 6px 9px ;
+        text-align: center;
+      }
+      .box3{
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        top: 10px;
+        margin: 100px 0px 0px 160px;
+        box-shadow: 2px 6px 9px ;
+        text-align: center;
+      }
+      .div2 h2{
+        padding-top: 190px;
+      }
+      .div2 p{
+        color: rgb(99, 95, 95);
+      }
+      .services{
+        height: 300px;
+        width: 100%;
+        background-color: whitesmoke;
+        margin-top: 690px;
+      }
+      .services{
+        padding: 30px 0px 0px 100px;
+      }
+      .services h2{
+        color: rgb(28, 131, 28);
+      }
+      .welcome{
+        height: 800px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        
+      }
+      .wel-img img{
+        padding: 0px 0px 0px 140px;
+        height: 800px;
+        /* width: 100px; */
+      }
+      .wel-txt{
+        padding: 70px 0px 0px 70px;
+        
+      }
+      .wel-txt h3{
+        color:rgb(28, 131, 28) ;
+      }
+      .wel-txt p{
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .row1{
+        height: 80px;
+        width: 550px;
+        border: 0px solid gray;
+        margin: 25px;
+        box-shadow: 2px 2px 10px gray;
+        
+      }
+      .row1 h5{
+        padding: 25px;
+        font-size: 24px;
+      }
+      .row1:hover{
+        background-color: rgb(28, 131, 28);
+        border-radius: 7px;
+        
+      }
+      .tips{
+        height: 280px;
+        width: 100%;
+        background-color: white;
+      }
+      .tips h3{
+        padding: 80px 0px 0px 580px;
+        color: rgb(28, 131, 28);
+      }
+      .tips h1{
+        padding: 0px 0px 0px 470px;
+      }
+      .season{
+        height: 600px;
+        width: 100%;
+        background-color:white;
+        display: flex;
+        
+      }
+      .pic img{
+        height: 250px;
+        width: 300px;
+      }
+      .pic{
+        padding: 60px 0px 0px 110px;
+      }
+      .pic h1{
+        padding: 0px 0px 0px 70px;
+        
+      }
+      .pic p{
+        font-weight: 50px;
+        color: gray;
+     } 
+     .cont{
+      height: 250px;
+      width: 100%;
+      background-color: rgb(28, 131, 28);
+      color: white;
+     }
+    .cont{
+       padding: 50px 0px 0px 100px ;
+       display: flex;
+    }
+    .cont2 {
+      padding: 0px 0px 200px 300px;
+      color: goldenrod;
+    }
+    .clients{
+        height: 260px;
+        width: 100%;
+        background-color: white;
+        /* padding: 60px 0px 0px 500px ; */
+      }
+    
+      .clients h2{
+       font-size: 70px;
+       /* padding-bottom: 30px; */
+       padding: 0px 0px 0px 450px;
+       color:rgb(28, 131, 28) ;
+      }
+      .clients h1{
+        padding: 60px 0px 0px 545px;
+      }
+      .team1{
+        height: 700px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        padding: 60px 0px 0px 100px;
+        
+      }
+      .t {
+        height: 530px;
+        width: 360px;
+        background-color: white;
+        margin: 10px;
+        box-shadow: 2px 2px 10px gray;
+        
+      }
+      .t p{
+        padding: 50px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .t img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 110px;
+      }
+      .t h2{
+        padding: 0px 0px 0px 110px;
+        color: rgb(28, 131, 28);
+      }
+      .email{
+        height: 200px;
+        width: 100%;
+        background-color:rgb(28, 131, 28) ;
+        display: flex;
+      } 
+      .email{
+        padding:60px 0px 0px 240px ;
+        color: white;
+
+      }
+      .e2{
+        height: 50px;
+        width: 240px;
+        background-color: white;
+        /* padding-left: 60px; */
+        margin-left: 180px;
+        margin-top: 30px;
+        border-radius: 5px;
+        
+      }
+      .e2{
+        padding: 12px 0px 0px 10px ;
+        color: black;
+      }
+      .e3{
+        height: 50px;
+        width: 150px;
+        margin-left: 0px;
+        margin-top: 30px;
+        background-color:rgb(2, 2, 2) ;
+        border-radius: 5px;
+        padding: 10px 0px 0px 33px ;
+      }
+      .email e3:hover{
+
+      }
+      .cont9{
+    height: 500px;
+    margin: 80px 0px 30px 0px;
+    background-color: black;
+    color: white;
+}
+
+.contact-head{
+    padding: 100px 0px 0px 80px;
+}
+
+.contact-para{
+    padding: 10px 0px 0px 40px;
+}
+
+.contact-head1{
+    padding: 5px 0px 0px 80px;
+}
+
+.contact-icon{
+    width: 30px;
+    height: 30px;
+    margin: 40px 0px 0px 40px;
+}
+
+.copy-para{
+    padding: 30px 0px 0px 420px;
+    font-size: 15px;
+    font-weight: light;
+}
+
+.btn9{
+    margin: 30px 0px 0px 80px;
+    padding: 17px 30px;
+    border-radius: 30px;
+}
+
+.btn9:hover{
+    background-color: rgb(28, 131, 28) !important;
+    color: white;
+}
+      
+      
+
+     
+    </style>
+</head>
+<body>
+  <!-- ///////// -->
+    <div class="logo" id="logo">
+      <h1>Lawn<span class="care">care</span></h1>
+    </div>
+    <nav class="navbar navbar-expand-lg nav-clr">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav1">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#logo">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sevices">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tips">CARE-TIPS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#clients">TESTIMONIALS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cont">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- ///////// -->
+    <div class="div1" id="home">
+      <div class="img1">
+        <img src="main.jpg" alt="">
+      </div>
+      <div class="txt1">
+        <h4>Welcome to our lawn</h4>
+      </div>
+      <div class="txt2">
+        <h1>Lawn Care For <br> Everyone</h1>
+      </div>
+      <div class="txt3">
+        <h3>Let us work on your yard</h3>
+      </div>
+    </div>
+    <div class="div2">
+      <div class="box1">
+       <h2>Garden Care</h2>
+       <p>Seeking justice in the world is a sed significant emotional and investment when we follow this call.</p>
+      </div>
+      <div class="box2">
+        <h2>Lawn mowing</h2>
+        <p>Seeking justice in the world is a sed significant emotional and investment when we follow this call.</p>
+      </div>
+      <div class="box3">
+        <h2>Lawn care</h2>
+        <p>Seeking justice in the world is a sed significant emotional and investment when we follow this call.</p>
+      </div>
+    </div>
+  <div class="services" id="sevices">
+    <h2>services</h2><br>
+     <h1>Lawn Services</h1><br>
+     <h4>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your</h4>
+
+  </div>
+  <div class="welcome">
+    <div class="wel-img">
+    <img src="service.jpg" alt="">
+  </div>
+  <div class="wel-txt">
+    <h3>Welcome to Lawn Care</h3><br>
+    <h1>Welcome to Lawn Care Company</h1> <br>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+  <div class="row1">
+    <h5>Gutter Cleaning</h5>
+  </div>
+  <div class="row1">
+    <h5>Organic fertilization and weed control</h5>
+  </div>
+  <div class="row1">
+    <h5>New lawn installation</h5>
+  </div>
+  <div class="row1">
+    <h5>Mulch and other services available</h5>
+  </div>
+  </div>
+  </div>
+  <div class="tips" id="tips">
+  <h3>Tips & Techniques</h3><br>
+  <h1>Seasonal Lawn Care Tips</h1>
+  </div>
+  <div class="season" id="sea">
+   <div class="pic"><img src="1.jpg" alt=""><br><br><br><h1>Spring</h1><br>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+  </div><br>
+   <div class="pic"><img src="fall2.jpg" alt=""><br><br><br>
+  <h1>Summer</h1><br>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p><br><br></div><br>
+   <div class="pic"><img src="winter.jpg" alt=""><br><br><br>
+  <h1>Winter</h1><br>
+  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p><br><br>
+</div><br>
+  </div>
+  <div class="cont" id="cont">
+    <div class="cont1">
+   <h2>Contact with us</h2><br>
+   <p><h4>Do you have any comments or questions </h4></p>
+   <p><h4>about the products then contact us.</h4></p></div>
+   <div class="cont2">
+    <h1>+00(123) 456-78-09</h1>
+   </div>
+   
+  </div>
+  <div class="clients" id="clients">
+    <h1>Testimonial</h1><br>
+    <h2>Happy Clients</h2>
+    </div>
+    <div class="team1">
+      <div class="t">
+        <p>Far far away, behind the word mountains, 
+          far from the countries Vokalia and 
+            Consonantia, there live the
+          blind texts.</p>
+          <img src="emma2.jpg" alt=""><br><br>
+          <h2>VIRAT</h2>
+          
+          
+      </div>
+      <div class="t">
+        <p>Far far away, behind the word mountains, 
+           far from the countries Vokalia and 
+            Consonantia, there live the
+          blind texts.</p>
+          <img src="emma2.jpg" alt=""><br><br>
+          <h2>JHONY</h2>
+      </div>
+      <div class="t">
+        <p>Far far away, behind the word mountains, 
+            far from the countries Vokalia and 
+             Consonantia, there live the
+          blind texts.</p>
+          <img src="emma2.jpg" alt=""><br><br>
+          <h2>DHONI</h2>
+      </div>
+    </div>
+    <div class="email">
+      <div class="e1">
+      <h1>Subcribe to our</h1>
+      <h1>Newsletter</h1>
+    </div>
+    <div class="e2">
+      <p>Enter email address</p>
+      </div>
+      <div class="e3">
+        <p>Subscribe</p>
+      </div>
+    </div>
+    <div class="container-fluid cont9" id="contUs">
+      <div class="row">
+        <div class="col-md-3">
+            <h4 class="contact-head">About Us</h4>
+            <p class="contact-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class="contact-head">Quick Links</h4>
+          <p class="contact-head1">About Us</p>
+          <p class="contact-head1">Services</p>
+          <p class="contact-head1">Testimonials</p>
+          <p class="contact-head1">Contact Us</p>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class="contact-head">Follow us</h4>
+          <img src="fb1.png" alt="" class="contact-icon">
+          <img src="insta.jpg" alt="" class="contact-icon">
+          <img src="twi.png" alt="" class="contact-icon">
+        </div>
+
+
+        <div class="col-md-3">
+          <h4 class="contact-head">Subscribe Newsletter</h4>
+          <button type="button" class="btn9 bg-light">Subscribe now</button>
+        </div>
+      </div>
+      <hr>
+      <p class="copy-para">Copyright ©2023 All rights reserved | This template is made by Mohan</p>
+    </div>
+
+</body>
+</html>
